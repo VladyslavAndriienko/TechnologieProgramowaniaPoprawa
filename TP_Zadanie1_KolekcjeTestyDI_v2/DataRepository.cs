@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace TP_Zadanie1_KolekcjeTestyDI
+namespace TP_Zadanie1_KolekcjeTestyDI_v2
 {
     public class DataRepository
     {
@@ -22,7 +22,7 @@ namespace TP_Zadanie1_KolekcjeTestyDI
             FillingColection.FillColection(dataContext);
         }
 
-        public WypelnianieStalymi GettWypelnianieStalymi(WypelnianieStalymi wypelnianieStalymi)
+        public WypelnianieStalymi GetWypelnianieStalymi(WypelnianieStalymi wypelnianieStalymi)
         {
             return wypelnianieStalymi;
         }
@@ -90,23 +90,23 @@ namespace TP_Zadanie1_KolekcjeTestyDI
             DataContext.listaOpisowStanu.Add(opisStanu);
         }
 
-        public void DeleteOpisStanu(string nazwaKsiazki)
+        public void DeleteOpisStanu(string nazwaGry)
         {
             for (int i = 0; i < DataContext.listaOpisowStanu.Count; i++)
             {
                 OpisStanu opisStanu = DataContext.listaOpisowStanu[i];
-                if (opisStanu.NazwaKsiazki.Equals(nazwaKsiazki))
+                if (opisStanu.NazwaGry.Equals(nazwaGry))
                 {
                     DataContext.listaOpisowStanu.Remove(opisStanu);
                 }
             }
         }
 
-        public OpisStanu GetOpisStanu(string nazwaKsiazki)
+        public OpisStanu GetOpisStanu(string nazwaGry)
         {
             foreach (OpisStanu opisStanu in DataContext.listaOpisowStanu)
             {
-                if (opisStanu.NazwaKsiazki.Equals(nazwaKsiazki))
+                if (opisStanu.NazwaGry.Equals(nazwaGry))
                 {
                     return opisStanu;
                 }

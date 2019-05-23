@@ -1,6 +1,4 @@
-﻿using TP_Zadanie1_KolekcjeTestyDI_v2;
-
-namespace TP_Zadanie1_KolekcjeTestyDI
+﻿namespace TP_Zadanie1_KolekcjeTestyDI_v2
 {
     public class WypelnianieStalymi : IFillingColection
     {
@@ -9,9 +7,9 @@ namespace TP_Zadanie1_KolekcjeTestyDI
             Wykaz wykaz1 = new Wykaz("Imie1", "Nazwisko1", 1, new System.DateTime(2019, 05, 21));
             Wykaz wykaz2 = new Wykaz("Imie2", "Nazwisko2", 2, new System.DateTime(2019, 05, 22));
             Wykaz wykaz3 = new Wykaz("Imie3", "Nazwisko3", 3, new System.DateTime(2019, 05, 23));
-            Katalog katalog1 = new Katalog(1);
-            Katalog katalog2 = new Katalog(2);
-            Katalog katalog3 = new Katalog(3);
+            Katalog katalog1 = new Katalog(1, "kategoriaGry1");
+            Katalog katalog2 = new Katalog(2, "kategoriaGry2");
+            Katalog katalog3 = new Katalog(3, "kategoriaGry3");
             OpisStanu opisStanu1 = new OpisStanu(katalog1, "nazwaGry1", "autorGry1", "opisGry1");
             OpisStanu opisStanu2 = new OpisStanu(katalog2, "nazwaGry2", "autorGry2", "opisGry2");
             OpisStanu opisStanu3 = new OpisStanu(katalog3, "nazwaGry3", "autorGry3", "opisGry3");

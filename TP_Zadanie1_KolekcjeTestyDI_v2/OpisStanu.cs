@@ -1,6 +1,4 @@
-﻿using TP_Zadanie1_KolekcjeTestyDI_v2;
-
-namespace TP_Zadanie1_KolekcjeTestyDI
+﻿namespace TP_Zadanie1_KolekcjeTestyDI_v2
 {
     public class OpisStanu
     {
