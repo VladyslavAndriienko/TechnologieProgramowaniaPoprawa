@@ -6,6 +6,8 @@ namespace TP_Zadanie1_KolekcjeTestyDI_v2
 {
     public class DataContext
     {
+        public int iloscElementowListy;
+
         public List<Wykaz> listaWykazow = new List<Wykaz>();
         public Dictionary<int, Katalog> listaKatalogow = new Dictionary<int, Katalog>();
         public List<OpisStanu> listaOpisowStanu = new List<OpisStanu>();
