@@ -12,7 +12,7 @@ namespace TP_Zadanie1_KolekcjeTestyDI_v2
 
         public DataService(DataRepository dataRepository)
         {
-            this.dataRepository = dataRepository;        
+            this.dataRepository = dataRepository;
         }
 
         public void ShowListaWykazow(List<Wykaz> listaWykazow)

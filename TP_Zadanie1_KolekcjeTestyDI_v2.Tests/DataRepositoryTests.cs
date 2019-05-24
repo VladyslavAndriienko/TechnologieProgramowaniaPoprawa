@@ -7,7 +7,7 @@ using TP_Zadanie1_KolekcjeTestyDI_v2;
 namespace TP_Zadanie1_KolekcjeTestyDI_v2.Tests
 {
     [TestClass]
-   public class DataRepositoryTests
+    public class DataRepositoryTests
     {
         [TestMethod]
         public void FillCollectionTest()
@@ -129,7 +129,9 @@ namespace TP_Zadanie1_KolekcjeTestyDI_v2.Tests
         {
             string kategoriaGry1 = "kategoriaGry1";
 
-            IFillingColection fillingColection = new WypelnianieStalymi();
+            IFillingColection fillingColection =
+
+            new WypelnianieStalymi();
             DataContext dataContext = new DataContext();
             DataRepository dataRepository = new DataRepository(fillingColection, dataContext);
             Katalog katalog1 = new Katalog(1, kategoriaGry1);
@@ -247,7 +249,9 @@ namespace TP_Zadanie1_KolekcjeTestyDI_v2.Tests
             string imie1 = "Imie1";
             string nazwisko1 = "Nazwisko1";
             string kategoriaGry1 = "kategoriaGry1";
-            string nazwaGry1 = "nazwaGry1";
+            string nazwaGry1 =
+
+            "nazwaGry1";
             string autorGry1 = "autorGry1";
             string opisGry1 = "opisGry1";
 
